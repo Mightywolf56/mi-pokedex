@@ -1,0 +1,59 @@
+.home__container {
+    background-color: rgb(223, 22, 22);
+}
+
+.home__container-img {
+    display: flex;
+    justify-content: center;
+}
+
+.home__img {
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.home__title {
+    font-size: 30px;
+    margin: 5px;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.home__parra {
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.home__form-container {
+    display: flex;
+    justify-content: center;
+}
+
+#nameTrainer {
+    width: 100vh;
+    height: 5vh;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.home__btn-start {
+    width: 80px;
+    font-size: 17px;
+    font-family: sans-serif;
+    background-color: rgb(206, 39, 39);
+    color: rgb(235, 229, 224);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+
+    
+
+}
+
+.home__btn-start:hover {
+    background-color: rgb(209, 63, 63);
+    color: antiquewhite;
+}
