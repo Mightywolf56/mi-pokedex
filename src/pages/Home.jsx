@@ -20,9 +20,9 @@ const Home = () => {
         <div className='home__container-img'>
             <img className='home__img' src="/Image/pokemon.png" alt="" />
         </div>
-        <h2 className='home__title'>Hello trainer</h2>
-        <p className='home__parra'>Give me your name to star</p>
-        <form className='home__form-container' onSubmit={() => handleSubmit}>
+        <h2 className='home__title'>Hello trainer!</h2>
+        <p className='home__parra'>Give me your name to start</p>
+        <form className='home__form-container' onSubmit={handleSubmit}>
             <input 
             required 
             id='nameTrainer' 

@@ -3,18 +3,24 @@ import { useSelector } from 'react-redux'
 import { Navigate, Outlet } from 'react-router-dom'
 import Header from './layout/Header'
 
-const ProtectedRoute = () => {
+const ProtectedRoutes = () => {
 
-    const nameTrainer = useSelector(store => store.nameTrainer)
+  const nameTrainer = useSelector(store => store.nameTrainer)
 
-    if(nameTrainer) {
-        return <Outlet/>
-            
-        
-    } else {
-        return <Navigate to="/" />
-    }
+
+
+  if (nameTrainer) {
+    return (
+      <>
+        <Header />
+        <Outlet />
+      </>
+    )
+
+  } else {
+    return <Navigate to="/" />
+  }
 
 }
 
-export default ProtectedRoute
+export default ProtectedRoutes
